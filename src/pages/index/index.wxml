@@ -1,6 +1,24 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <!-- <view>
+    <input type="number" name="linkTel" bindblur="blurTel" value="{{agentTel}}" placeholder="*手机号码" maxlength="11" />
+  </view>
+  <button type="default" bindtap="setVerify">{{VerifyCode}}</button> -->
+
+  <view class="login-top">
+    <input class="phonecode" placeholder="手机号码" bindinput="phoneinput" type="number" bindinput="phoneinput" maxlength="11" />
+    <view class="login-top1">
+        <input type="number" placeholder="验证码" bindinput="codeinput" maxlength="6" />
+        <button bindtap="changeCode" disabled="{{codeDis}}">
+          <text hidden="{{flag != true || phoneCode == '获取验证码'}}">重发</text>{{phoneCode}}<text hidden="{{phoneCode == '获取验证码'}}">S</text>
+        </button>
+    </view>
+</view>
+
+
+
+
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
@@ -9,5 +27,5 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>
