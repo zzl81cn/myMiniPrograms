@@ -103,6 +103,7 @@ Page({
     })
   },
 
+  
   changeCode: function () {
     var _this = this
     let telephone = this.data.telephone
