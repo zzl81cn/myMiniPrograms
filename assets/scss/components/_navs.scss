@@ -1,0 +1,50 @@
+//
+// navs
+// -------------------
+
+.nav {
+  &.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $body-bg;
+    border-bottom: 1rpx solid $gray-lightest;
+    .tab-item {
+      position: relative;
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      padding: 24rpx 20rpx;
+      color: $gray-light;
+      font-size: 24rpx;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 44rpx;
+        right: 0;
+        display: block;
+        margin-top: -10rpx;
+        width: 2rpx;
+        height: 10rpx;
+        background-color: $gray-light;
+      }
+      &.active {
+        color: $brand-primary;
+        // font-weight: bold;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+//
+// 自定义公共组件
+// ----------
+
+// core variables
+@import "components/variables";
+@import "components/mixins";
+
+// Core CSS
+@import "components/type";
+@import "components/form";
+@import "components/buttons";
+
+// components
+@import "components/navs"; /* 导航 */
+@import "components/box";
+@import "components/bar";
+@import "components/cell"; /* 列表栅格 */
+@import "components/tag"; /* 标签 */
+@import "components/img-icon"; /* 图片图标 */
+
+// components / animation
+@import "components/modals"; /* 基于微信动画接口的模态 */
+
+// page components
+@import "page/demo";
+@import "page/index";

@@ -1,0 +1,53 @@
+//
+// Cell list & Cell item
+// -----------
+
+.cell-title {
+  display: flex;
+  margin-bottom: 20rpx;
+  padding: 20rpx;
+  background-color: $body-bg-gray;
+}
+.nfs-cell-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  background-color: $body-bg;
+  .nfs-cell-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20rpx 0;
+    color: $gray-dark;
+    font-size: 24rpx;
+    .nfs-item-master {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 24rpx;
+      .iconfont {
+        font-size: 24rpx;
+      }
+    }
+    .nfs-item-slave {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 24rpx;
+      .iconfont,
+      .img-icon {
+        font-size: 24rpx;
+      }
+      .item-value {
+        margin-right: 10rpx;
+      }
+    }
+  }
+  &.thin-vertical {
+    .nfs-cell-item {
+      padding: 10rpx 0;
+    }
+  }
+}

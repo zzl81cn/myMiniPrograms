@@ -1,0 +1,153 @@
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+// custom button
+// .btn {
+// 		margin: initial;
+// 		margin-left: 10rpx;
+// 		font-size: 28rpx;
+// 		border-radius: 35rpx;
+// 		border: 1rpx solid $gray-lightest;
+// 		color: $gray-dark;
+// 		background-color: $body-bg;
+// 		&::after {
+// 			display: none;
+// 		}
+// }
+
+@mixin button-variant($color, $background, $border) {
+  color: $color !important;
+  background-color: $background !important;
+  border-color: $border !important;
+	margin: initial;
+	//margin-left: 10rpx;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 25%);
+  }
+  &:hover {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+        border-color: darken($border, 12%);
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: darken($background, 17%);
+          border-color: darken($border, 25%);
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+	&::after {
+		display: none;
+	}
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+// 描边按钮样式（注意并联active类的样式）字体颜色，焦点颜色，边框颜色
+@mixin button-variant-outline($color, $rev-color, $border) {
+  color: $color !important;
+  background-color: transparent !important;
+  border: 1px solid $border !important;
+
+  &:focus,
+  &.focus {
+    color: $rev-color !important;
+    background-color: $color !important;
+    // background-color: transparent !important;
+    border-color: darken($border, 25%) !important;
+  }
+  &:hover {
+    color: $color !important;
+    background-color: $gray-lightest !important;
+    // background-color: transparent !important;
+    border: 1px solid $border !important;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle {
+    color: $color !important;
+    background-color: $gray-lightest !important;
+    border-color: $border !important;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color !important;
+      background-color: $gray-lighter !important;
+      border-color: darken($border, 25%) !important;
+    }
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle {
+    background-image: none !important;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color !important;
+      background-color: $rev-color !important;
+      border-color: $border !important;
+    }
+  }
+
+  .badge {
+    color: $color !important;
+    background-color: $color !important;
+  }
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+  justify-content: center;
+  width: 100% !important;
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin button-round($border-radius) {
+  border-radius: $border-radius;
+}

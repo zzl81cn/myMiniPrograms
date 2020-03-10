@@ -1,0 +1,158 @@
+//
+// Form
+// ---------------------
+
+.form-control {
+  &[disabled] {
+    background-color: $gray-lightest;
+  }
+}
+// 数字加减组件 - 0 +
+.stepper {
+  // width: 160rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  /*给主容器设一个边框*/
+  //border: 1rpx solid lighten($gray-lighter, 20%);
+  border-radius: 6rpx;
+  // margin:0 auto;
+  .stepper-btn {
+    display: flex;
+    width: 60rpx;
+    //line-height: 60rpx;
+    justify-content: center;
+    //float: left;
+    border: 1rpx solid lighten($gray-lighter, 20%);
+    &:nth-child(1) {
+      border-radius: 6rpx 0 0 6rpx;
+    }
+    &:last-child {
+      border-radius: 0 6rpx 6rpx 0;
+    }
+  }
+  .form-control {
+    //float: left;
+    //margin: 0 auto;
+    display: flex;
+    width: 80rpx;
+    height: 56rpx;
+    text-align: center;
+    font-size: 24rpx;
+    /*给中间的input设置左右边框即可*/
+    //border-left: 1px solid lighten($gray-lighter, 20%);
+    //border-right: 1px solid lighten($gray-lighter, 20%);
+    //border: 1rpx solid lighten($gray-lighter, 20%);
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1rpx;
+    border-color: lighten($gray-lighter, 20%) transparent;
+  }
+  .normal{
+    color: $gray-base;
+  }
+  .disabled{
+    color: $gray-lighter;
+  }
+}
+
+.form-virtical {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 20rpx;
+  // width: 100%;
+  font-size: 28rpx;
+
+  .form-group {
+    padding: 25rpx 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid lighten($gray-lightest, 2.5%); // #f5f5f5
+    &:last-child {
+      border-bottom: none;
+    }
+    .form-master {
+      display: flex;
+      flex-direction: row;
+    }
+    .control-label {
+      display: flex;
+      align-items: center;
+      margin: 0 20rpx;
+      width: 140rpx;
+      font-size: 28rpx;
+      color: $gray-light;
+    }
+
+    .form-control {
+      font-size: 28rpx;
+      display: flex;
+      flex: 1;
+      align-items: center;
+      &:nth-child(2) {
+        margin-right: 20rpx;
+      }
+      input {
+        border: 1rpx solid $gray-lightest;
+        border-radius: 4rpx;
+      }
+      .uni-input {
+        padding: 0 10rpx 0 0;
+        height: 44rpx;
+        line-height: 44rpx;
+      }
+
+      .angle-down {
+        font-size: 28rpx;
+        color: $brand-primary;
+      }
+      .same-placeholder {
+        width: 100%;
+        font-size: 28rpx;
+        color: $gray-lighter;
+        &.has-value {
+          color: $gray;
+        }
+      }
+    }
+    &.required {
+      position: relative;
+      &::before {
+        position: absolute;
+        top: 50%;
+        margin-top: -14rpx;
+        left: 0;
+        content: '*';
+        color: $brand-primary;
+        font-size: 28rpx;
+        font-weight: bold;
+      }
+    }
+
+    .input-default {
+      font-size: 28rpx;
+      color: lighten($gray-lighter, 20%);
+    }
+    .help {
+      font-size: 32rpx;
+      color: lighten($gray-lighter, 20%);
+    }
+    .arrow {
+      font-size: -25rpx;
+      color: $gray;
+    }
+    .uni-checkbox .uni-checkbox-input {
+      border: 1rpx solid $brand-primary;
+    }
+  }
+}
+
+.form-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+

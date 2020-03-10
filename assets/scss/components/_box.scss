@@ -1,0 +1,77 @@
+//
+// showbox
+// -----------------------
+
+// 纯白flex布局
+.pure-box {
+	display: flex;
+	flex: 1;
+	background-color: $body-bg;
+}
+.show-box {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-bottom: 20rpx;
+	padding: 20rpx;
+	background-color: $body-bg;
+	.box-item {
+		font-size: 32rpx;
+	}
+	&.center-box {
+		.box-item {
+			justify-content: center;
+		}
+	}
+}
+
+.media {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.media-slave {
+		margin-right: 20rpx;
+		.item-image {
+			width: 100rpx;
+			height: 100rpx;
+		}
+	}
+	.media-master {
+		flex: 1;
+		flex-direction: column;
+		justify-content: space-between;
+		.master-item {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			.item-master,
+			.item-slave {
+				display: flex;
+				&.price {
+					font-weight: bold;
+					color: $brand-primary;
+				}
+				&.small {
+					font-size: $font-size-small;
+				}
+			}
+		}
+	}
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20rpx;
+	padding: 20rpx;
+	background-color: $body-bg;
+	.panel-head {
+		display: flex;
+		flex-direction: row;
+		font-weight: bold;
+	}
+	.panel-body {
+		display: flex;
+		flex-direction: column;
+	}
+}

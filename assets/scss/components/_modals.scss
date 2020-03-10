@@ -1,0 +1,127 @@
+//
+// modals
+// ---------------
+
+/* 抽屉遮罩 */
+.ayh-mask{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $gray-base;
+  opacity: 0.5;
+  z-index: 100;
+  &.right-drawer {
+    z-index: 200;
+  }
+  &.bottom-drawer {
+    z-index: 200;
+  }
+}
+
+/* modal */
+.ayh-modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: $body-bg;
+  box-sizing: border-box;
+  border-radius: 8rpx;
+  .modal-head {
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx;
+    font-size: 28rpx;
+    color: $gray-light;
+  }
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+  }
+  .modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .footer-item {
+      display: flex;
+      justify-content: center;
+      padding: 20rpx;
+      width: 50%;
+      font-size: 28rpx;
+    }
+  }
+  &.modal-default {
+    top: -50px;
+    right: 80rpx;
+    left: 80rpx;
+    min-height: 100rpx;
+    z-index: 100;
+    .modal-footer {
+      border-top: 1rpx solid $gray-lightest;
+      .footer-item {
+        border-right: 1rpx solid $gray-lightest;
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+
+/* 抽屉模态 */
+.ayh-drawer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background: $body-bg;
+  .drawer-box {
+    box-sizing: border-box;
+  }
+  /* 轮胎列表顶部价格排序在用 */
+  &.top-drawer {
+    top: -130px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 100;
+  }
+  /* 会员服务底部弹出在用 */
+  &.bottom-drawer {
+    bottom: -180px;
+    left: 0;
+    padding: 20rpx;
+    width: 100%;
+    min-height: 180px;
+    box-sizing: border-box;
+    z-index: 100;
+    .drawer-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex: 1;
+    }
+  }
+  /* 轮胎列表右侧弹出综合筛选在用 */
+  &.right-drawer {
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    z-index: 200;
+    .drawer-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 120rpx;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .submit-bar {
+      padding: 20rpx;
+      flex-direction: row;
+    }
+  }
+}
+

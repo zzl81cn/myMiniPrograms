@@ -1,0 +1,64 @@
+//
+// demo
+// -----------
+
+.page-demo {
+  padding: 20rpx;
+  font-size: 28rpx;
+  color: $gray-dark;
+  .head {
+    margin-bottom: 20rpx;
+    .content-primary {
+      margin-bottom: 20rpx;
+      font-size: 32rpx;
+    }
+    .content-slave {
+      font-size: 24rpx;
+    }
+  }
+  .group {
+    margin-bottom: 20rpx;
+    padding: 20rpx 0;
+    .group-title {
+      font-size: 28rpx;
+    }
+    .group-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20rpx 0;
+      .list-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20rpx;
+        padding: 10rpx;
+        border-radius: 30rpx;
+        background-color: $gray-lightest;
+      }
+    }
+  }
+}
+
+.page-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  .docs-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+    .doc-title {
+      margin-bottom: 20rpx;
+      font-size: 28rpx;
+      color: $gray-dark;
+    }
+    .ayh-example {
+      display: flex;
+      flex-direction: row;
+      .btn {
+        margin-right: 5rpx;
+      }
+    }
+  }
+}

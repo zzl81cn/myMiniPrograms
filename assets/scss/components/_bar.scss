@@ -1,0 +1,63 @@
+//
+// submit bar
+// --------------------
+
+.submit-bar {
+	display: flex;
+	background-color: $body-bg;
+	&.bottom-bar {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		.btn-primary {
+			// line-height: 100rpx;
+		}
+	}
+	&.transparent {
+		background-color: transparent;
+	}
+}
+
+.submit-bar {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: $body-bg;
+	.submit-agree {
+		display: flex;
+		flex-direction: row;
+		padding: 10rpx;
+		.agree-label {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+	.pay-area {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		.pay-summary {
+			display: flex;
+			// justify-content: center;
+			flex: 1;
+			padding-left: 40rpx;
+			// align-items: center;
+			font-size: 32rpx;
+			color: $gray;
+			font-weight: bold;
+		}
+		.btn-primary {
+			border-radius: 0;
+			width: 240rpx;
+			margin: initial;
+		}
+	}
+}

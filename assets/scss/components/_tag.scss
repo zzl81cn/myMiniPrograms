@@ -1,0 +1,38 @@
+// Tag
+//
+// ==
+
+.tag {
+	display: flex;
+	align-self: center;
+	margin: 0 2px;
+	font-size: $font-size-small;
+	line-height: 1.1;
+	padding: 2px 4px;
+	border-radius: 4rpx;
+	font-weight: normal;
+	&.tag-warning {
+		color: $brand-primary;
+		border: 1rpx solid lighten($gray-lighter, 20%);
+	}
+}
+
+// 实底背景色标签
+// 主题红
+.tag-warning {
+	@include tag-variant($body-bg, $brand-danger, $brand-danger)
+}
+
+// 描边标签
+// 蓝色
+.tag-outline-info {
+	@include tag-outline-variant($brand-info, transparent, $brand-info)
+}
+// 金色
+.tag-outline-gold {
+	@include tag-outline-variant($gold-color, transparent, $gold-color)
+}
+// 主题红
+.tag-outline-warning {
+	@include tag-outline-variant($brand-danger, transparent, $brand-danger)
+}
