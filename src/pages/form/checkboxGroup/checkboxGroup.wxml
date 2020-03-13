@@ -1,0 +1,42 @@
+<!--pages/form/checkboxGroup/checkboxGroup.wxml-->
+<view class="appointment-package-view">
+  <view class="page-head">
+    <view class="head-master">
+      <text class="title-text">title</text>
+    </view>
+    <view class="head-slave">slave-title</view>
+  </view>
+  <view class="page-body">
+    <checkbox-group bindchange="checkboxChange">
+      <block wx:for="{{damageReserveListData}}" wx:for-item="item" wx:key="index">
+        <view class="collapse-box {{[item.collapsed == true ? 'collapsed': '']}}">
+          <view class="collapse-head" data-index="{{index}}" catchtap="switchCollapse">
+            <view class="head-title">{{item.laborsetName}}</view>
+            <view class="img-icon img-icon-arrow-up-circle-outline"></view>
+          </view>
+          <view class="collapse-body">
+            <view class="package-list">
+              <label class="package-item checkbox" wx:if="{{item.laborsetAccounts.length>0}}">
+                <view class="title">名称</view>
+                <view class="amount">次数</view>
+                <checkbox class="item-checkbox" disabled="{{true}}" color="#e42b42" style="opacity:0"/>
+              </label>
+              <block wx:for="{{item.laborsetAccounts}}" wx:for-item="itemElement" wx:key="index">
+                <label class="package-item checkbox">
+                  <view class="title">{{itemElement.laborName}}</view>
+                  <view class="amount">{{itemElement.surplusTimes}}次</view>
+                  <checkbox class="item-checkbox" value="{{itemElement.id}}" color="#e42b42"/>
+                </label>
+              </block>
+            </view>
+          </view>
+        </view>
+      </block>
+    </checkbox-group>
+    <view class="no-data bottom-hint" wx:if="{{dataListEmpty}}">暂无数据</view>
+  </view> <!-- page-body -->
+  <view class="submit-bar bottom-bar">
+    <button class="btn btn-primary btn-lg btn-block" disabled="{{isDisabledSubmit}}" catchtap="submit">确定</button>
+  </view>
+</view>
+

@@ -1,0 +1,55 @@
+<!--pages/form/checkboxGroup/checkboxFlatList.wxml-->
+<view class="page-view ap-preview-view">
+  <view class="page-body">
+    <view class="h2">已选</view>
+    <view class="show-box show-box-default">
+      <block wx:for="{{temp}}" wx:for-item="item" wx:key="index">
+        <view class="dl-list">
+          <view class="dl-dt">{{item.laborsetName}}</view>
+          <view class="dl-dd">
+            <view wx:for="{{item.childGroup}}" wx:for-item="listItem" wx:key="childIndex" class="dd-item">
+              <view class="master">{{listItem.laborName}}</view>
+              <view class="count">x1</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="h2">预约信息</view>
+    <view class="show-box show-box-default">
+      <view class="cell-group">
+        <view class="cell-item right-clean">
+          <view class="cell-master"><text class="cell-tit">联系电话</text></view>
+          <view class="cell-slave">
+            <view class="cell-content">
+              <input type="number" value='{{form.phone}}' placeholder="请输入手机号" placeholder-class="input-placeholder" placeholder-style="font-size: 24rpx" bindconfirm="getPhone" bindblur="getPhone" />
+            </view>
+            <view class="cell-arrow"></view>
+          </view>
+        </view>
+        <view class="cell-item" catchtap="selectTime">
+          <view class="cell-master"><text class="cell-tit">预约时间</text></view>
+          <view class="cell-slave">
+            <view class="cell-content">{{appointment}}</view>
+            <view class="cell-arrow"></view>
+          </view>
+        </view>
+        <view class="cell-item" catchtap="goSelectStore">
+          <view class="cell-master"><text class="cell-tit">选择门店</text></view>
+          <view class="cell-slave">
+            <view wx:if="{{storeAddress}}" class="cell-content virtical">
+              <text class="master-text">{{storeAddress.name}}</text>
+              <text class="slave-text">{{storeAddress.address}}</text>
+            </view>
+            <view wx:else class="cell-content">选择预约门店</view>
+            <view class="cell-arrow"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="submit-bar bottom-bar">
+      <button class="btn btn-primary btn-lg btn-block" loading="{{btnLoading}}" catchtap="submit">确定预约</button>
+    </view>
+  </view>
+</view>
+

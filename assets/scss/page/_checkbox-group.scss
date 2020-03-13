@@ -1,0 +1,287 @@
+//
+// 套餐卡预约 appointmentPackage
+// ------------------------
+//.img-icon {
+//  width: 30rpx;
+//  height: 30rpx;
+//  &.img-icon-arrow-up-circle-outline {
+//    background: url('https://product.aiyihang.com/upload/images/appointment_package/red-arrow-up-circle-outline.png') center center no-repeat;
+//    background-size: contain;
+//  }
+//}
+/* 选择预约项目 */
+.appointment-package-view {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  .page-head {
+    margin-bottom: 10rpx;
+    padding: 44rpx 20rpx;
+    height: 87rpx;
+  //  background-position: right bottom;
+  //  background-repeat: no-repeat;
+  //  background-size: 290rpx 210rpx;
+    .head-master {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .title-icon {
+        width: 40rpx;
+        height: 40rpx;
+      }
+      .title-text {
+        font-size: 36rpx;
+        font-weight: bold;
+      }
+      .btn {
+        margin-left: 20rpx;
+      }
+    }
+    .head-slave {
+      font-size: 28rpx;
+    }
+  }
+  .page-body {
+    padding: 0 35rpx;
+    .collapse-box {
+      margin-bottom: 20rpx;
+      padding: 0 20rpx;
+      color: $gray-dark;
+      background-color: $body-bg !important;
+      .collapse-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20rpx 0;
+        font-size: 28rpx;
+        font-weight: 600;
+        border-bottom: solid 1rpx $gray-lightest;
+      }
+      .collapse-body {
+        display: flex;
+        flex-direction: column;
+        transition: all 1s;
+      }
+      &.collapsed {
+        .collapse-head .img-icon {
+          transform: rotate(180deg);
+        }
+        .collapse-body {
+          display: none;
+        }
+      }
+    }
+  }
+  .package-list {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 0;
+    font-size: 28rpx;
+    .package-item {
+      display: flex;
+      flex: row;
+      justify-content: space-between;
+      padding: 15rpx 0;
+      .title {
+        width: 60%;
+      }
+      .amount {
+        width: 20%;
+      }
+    }
+  }
+  .submit-bar {
+    .btn {
+      padding: 28rpx 32rpx;
+      border-radius: 0;
+    }
+  }
+}
+
+/* 预约结果预览 */
+.ap-preview-view {
+  .page-body {
+    padding: 0 35rpx;
+    .h2 {
+      padding: 20rpx 0;
+      font-size: 24rpx;
+    }
+    .dl-list {
+      display: flex;
+      flex-direction: column;
+      padding: 20rpx 0;
+      // margin-bottom: 30rpx;
+      border-bottom: 1rpx solid #f5f5f5;
+      .dl-dt,
+      .dl-dd {
+        display: flex;
+        color: $gray-dark;
+        line-height: 1.8;
+      }
+      .dl-dt {
+        margin-bottom: 15rpx;
+        font-size: 28rpx;
+        font-weight: 600;
+      }
+      .dl-dd {
+        flex-direction: column;
+        .dd-item {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 10rpx;
+          font-size: 24rpx;
+          .master {
+          }
+          .count {
+          }
+        }
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+  .cell-item {
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .cell-master,
+    .cell-slave {
+      display: flex;
+    }
+    .cell-master {
+      width: 30%;
+      font-size: 28rpx;
+      .cell-tit {
+        font-size: 28rpx;
+      }
+    }
+    .cell-slave {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      flex: 1;
+      font-size: 28rpx;
+      .cell-content {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        .primary-text {
+          font-size: 28rpx;
+        }
+        .slave-text {
+          font-size: 24rpx;
+        }
+        &.virtical {
+          flex-direction: column;
+        }
+      }
+      .cell-arrow {
+        margin-left: 10rpx;
+        width: 30rpx;
+        height: 30rpx;
+        //background: url('https://product.aiyihang.com/upload/images/userinfo/arrowleft.png') center center no-repeat;
+        background-size: contain;
+      }
+    }
+    &.right-clean {
+      .cell-arrow {
+        visibility: hidden;
+      }
+    }
+  }
+  .cell-group {
+    .cell-item:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+  .submit-bar {
+    .btn {
+			padding: 28rpx 32rpx;
+      border-radius: 0;
+    }
+  }
+}
+
+/* 订单列表 */
+.appointment-list-view {
+  // padding-top: 88rpx;
+  .order-list {
+    display: flex;
+    flex-direction: column;
+    // height: calc(100% + 40px);
+    // transform: translateY(-40px);
+    padding: 20rpx;
+    box-sizing: border-box;
+  }
+  .panel {
+    &.panel-default {
+      padding: 20rpx;
+      background-color: $body-bg;
+      .panel-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1rpx solid #d8d8d8;
+        padding-bottom: 20rpx;
+        font-size: 24rpx;
+        font-weight: normal;
+        .head-master {
+        }
+        .head-slave {
+          &.success {
+            color: $brand-primary;
+          }
+        }
+      }
+      .panel-body {
+        padding: 20rpx 0;
+      }
+      .panel-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 20rpx;
+        // border-top: 1rpx solid #d8d8d8;
+      }
+    }
+  }
+  .dl {
+    &.dl-horizontal {
+      display: flex;
+      flex-direction: column;
+      .dl-item {
+        display: flex;
+        flex-direction: row;
+        .dt,
+        .dd {
+          display: flex;
+          font-size: 28rpx;
+          color: $gray-dark;
+        }
+        .dt {
+          width: 160rpx;
+        }
+        .dd {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
