@@ -43,10 +43,10 @@ gulp
 │  │  └─common
 │  ├─libs
 │  ├─pages
-│  │  ├─category
+│  │  ├─find
 │  │  ├─index 首页
-│  │  ├─user 个人中心
-│  │  └─stores 门店
+│  │  ├─user 个人
+│  │  └─list
 │  ├─style
 │  ├─utils
 │  ├─app.js
