@@ -1,0 +1,30 @@
+<!--pages/demo/index.wxml-->
+<view class="page-demo">
+  <view class="head">
+    <view class="content-primary">爱义行养车小程序组件库——示例说明</view>
+    <view class="content-slave">by：周紫龙</view>
+  </view>
+  <view class="group">
+    <view class="group-title">基础组件</view>
+    <view class="group-list">
+      <navigator class="list-item" url="/pages/demo/button/button" hover-class="navigator-hover">按钮</navigator>
+      <navigator class="list-item" url="/pages/demo/cellTable/cell-table" hover-class="navigator-hover">cell单元格</navigator>
+      <navigator class="list-item" url="/pages/demo/imgIcon/img-icon" hover-class="navigator-hover">图片图标</navigator>
+    </view>
+  </view>
+  <view class="group">
+    <view class="group-title">表单组件</view>
+    <view class="group-list">
+      <navigator class="list-item" url="/pages/demo/drawer/drawer" hover-class="navigator-hover">抽屉（稍后列入）</navigator>
+      <navigator class="list-item" url="/pages/demo/modal/modal" hover-class="navigator-hover">模态窗（稍后列入）</navigator>
+      <navigator class="list-item" url="/pages/demo/button/button" hover-class="navigator-hover">车牌键盘（稍后列入）</navigator>
+      <navigator class="list-item" url="/pages/demo/button/button" hover-class="navigator-hover">评星组件（稍后列入）</navigator>
+    </view>
+  </view>
+  <view class="group">
+    <view class="group-title">复合组件</view>
+    <view class="group-list">
+      <navigator class="list-item" url="/pages/demo/button/button" hover-class="navigator-hover">手风琴组件（稍后列入）</navigator>
+    </view>
+  </view>
+</view>

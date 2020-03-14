@@ -1,4 +1,17 @@
 /**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.index-list {
+  display: flex;
+  flex-direction: column;
+}
+.index-list .list-item {
+  margin-bottom: 20rpx;
+}
+/*
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -18,4 +31,4 @@
 
 .usermotto {
   margin-top: 200px;
-}
+}*/

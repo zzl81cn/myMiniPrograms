@@ -1,0 +1,77 @@
+<!--pages/demo/button/button.wxml-->
+<view class="page-section">
+  <view class="docs-section">
+    <view class="doc-title">普通按钮（常规尺寸）</view>
+    <view class="ayh-example">
+      <button class="btn btn-default">默认</button>
+      <button class="btn btn-primary">主色调</button>
+      <button class="btn btn-success">成功</button>
+      <button class="btn btn-info">信息</button>
+      <button class="btn btn-warning">警告</button>
+      <button class="btn btn-danger">危险</button>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="doc-title">朴素按钮（常规尺寸）</view>
+    <view class="ayh-example">
+      <button class="btn btn-default btn-outline">默认</button>
+      <button class="btn btn-primary btn-outline">主色调</button>
+      <button class="btn btn-success btn-outline">成功</button>
+      <button class="btn btn-info btn-outline">信息</button>
+      <button class="btn btn-warning btn-outline">警告</button>
+      <button class="btn btn-danger btn-outline">危险</button>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="docs-section">
+      <view class="doc-title">普通按钮（禁用状态）</view>
+      <view class="ayh-example">
+        <button class="btn btn-default" disabled="true">默认</button>
+        <button class="btn btn-primary" disabled="true">主色调</button>
+        <button class="btn btn-success" disabled="true">成功</button>
+        <button class="btn btn-info" disabled="true">信息</button>
+        <button class="btn btn-warning" disabled="true">警告</button>
+        <button class="btn btn-danger" disabled="true">危险</button>
+      </view>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="doc-title">圆形按钮（常规尺寸）</view>
+    <view class="ayh-example">
+      <button class="btn btn-default btn-round">默认</button>
+      <button class="btn btn-primary btn-round">主色调</button>
+      <button class="btn btn-success btn-round">成功</button>
+      <button class="btn btn-info btn-round">信息</button>
+      <button class="btn btn-warning btn-round">警告</button>
+      <button class="btn btn-danger btn-round">危险</button>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="doc-title">圆形按钮（大、常规、中、小尺寸）</view>
+    <view class="ayh-example">
+      <button class="btn btn-default btn-sm btn-round-sm">默认</button>
+      <button class="btn btn-primary btn-round">主色调</button>
+      <button class="btn btn-success btn-md btn-round-md">成功</button>
+      <button class="btn btn-info btn-lg btn-round-lg">信息</button>
+      <button class="btn btn-warning btn-lg btn-round-lg">警告</button>
+      <button class="btn btn-danger btn-lg btn-round-lg">危险</button>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="doc-title">块级按钮（大、常规、中、小尺寸）</view>
+    <view class="ayh-example">
+      <button class="btn btn-primary btn-block">主色调</button>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="ayh-example">
+      <button class="btn btn-primary btn-outline btn-block">主色调</button>
+    </view>
+  </view>
+  <view class="docs-section">
+    <view class="ayh-example">
+      <button class="btn btn-primary btn-lg btn-round-lg btn-block">主色调</button>
+    </view>
+  </view>
+
+</view>

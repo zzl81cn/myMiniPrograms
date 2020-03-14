@@ -1371,37 +1371,37 @@ fieldset[disabled] .btn-outline.btn-danger.focus {
 }
 
 .img-icon.img-icon-arrow-up-circle-outline {
-  background: url("https://product.aiyihang.com/upload/images/appointment_package/red-arrow-up-circle-outline.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/appointment_package/red-arrow-up-circle-outline.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-icon-red-arrowdown {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/red-arrowdown40.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/red-arrowdown40.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-icon-black-arrowdown {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/black-arrowdown40.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/black-arrowdown40.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-black-arrow-right {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/black-arrowleft40.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/black-arrowleft40.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-location-shadow-gray-outline {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/location-shadow-gray-outline.png?20200213") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/location-shadow-gray-outline.png?20200213") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-location-black-outline {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/location-black-outline.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/location-black-outline.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 
 .img-icon.img-target-black-outline {
-  background: url("https://product.aiyihang.com/upload/images/common/img-icon/target-black-outline.png") center center no-repeat;
+  background: url("https://www.zzl81cn.com/assets/images/common/img-icon/target-black-outline.png") center center no-repeat;
   background-size: 30rpx 30rpx;
 }
 

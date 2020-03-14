@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/form/checkboxGroup/checkboxGroup",
-    "pages/form/checkboxGroup/checkboxFlatList"
+    "pages/form/checkboxGroup/checkboxFlatList",
+    "pages/demo/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

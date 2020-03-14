@@ -1,15 +1,15 @@
 //
-// 套餐卡预约 appointmentPackage
+// checkbox-group
 // ------------------------
 //.img-icon {
 //  width: 30rpx;
 //  height: 30rpx;
 //  &.img-icon-arrow-up-circle-outline {
-//    background: url('https://product.aiyihang.com/upload/images/appointment_package/red-arrow-up-circle-outline.png') center center no-repeat;
+//    background: url('https://www.zzl81cn.com/assets/images/appointment_package/red-arrow-up-circle-outline.png') center center no-repeat;
 //    background-size: contain;
 //  }
 //}
-/* 选择预约项目 */
+/* 选择项目 */
 .appointment-package-view {
   min-height: 100vh;
   background-color: #f4f4f4;
@@ -98,7 +98,7 @@
   }
 }
 
-/* 预约结果预览 */
+/* 结果预览 */
 .ap-preview-view {
   .page-body {
     padding: 0 35rpx;
@@ -190,7 +190,7 @@
         margin-left: 10rpx;
         width: 30rpx;
         height: 30rpx;
-        //background: url('https://product.aiyihang.com/upload/images/userinfo/arrowleft.png') center center no-repeat;
+        //background: url('https://www.zzl81cn.com/assets/images/userinfo/arrowleft.png') center center no-repeat;
         background-size: contain;
       }
     }
@@ -214,7 +214,7 @@
   }
 }
 
-/* 订单列表 */
+/* 列表 */
 .appointment-list-view {
   // padding-top: 88rpx;
   .order-list {

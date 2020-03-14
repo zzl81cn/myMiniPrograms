@@ -1,0 +1,18 @@
+<!--pages/demo/drawer/drawer.wxml-->
+<view class="page-demo">
+  <!-- member -->
+  <!--<view wx:if="{{showSelectNumDrawer}}" class="ayh-drawer bottom-drawer" animation="{{animationData}}">
+  <view class="drawer-box">
+    <view class="details-item">
+      <view class="title">购买数量</view>
+      <view class="stepper">
+        <button class="stepper-btn" bindtap="bindMinus" disabled="{{minusStatus}}">-</button>
+        <input class="form-control" type="number" bindchange="bindManual" value="{{num}}" disabled="{{numDisabledStatus}}" />
+        <button class="stepper-btn" bindtap="bindPlus" disabled="{{minusStatus}}">+</button>
+      </view>
+    </view>
+    <view class="details-item"><text class="text-warning">*七座及以上车辆请选择2次</text></view>
+    <button class="btn btn-primary btn-lg btn-block" data-status="close" bindtap="submit">确定</button>
+  </view>
+</view>--> <!-- 数量抽屉 end -->
+</view>
