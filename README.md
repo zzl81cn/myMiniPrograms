@@ -59,3 +59,6 @@ gulp
 ├─package.json
 └─README.md
 ```
+
+## path
+* https://www.zzl81cn.com/my-mp-wechat/common/star/full-star.png

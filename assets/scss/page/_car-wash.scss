@@ -1,0 +1,374 @@
+//
+// car wash
+// ------------------
+
+.page-wash-home {
+  .wash-body {
+    padding: 60rpx 20rpx 472rpx;
+    .store-box {
+      position: fixed;
+      top: 0;
+      right: 20rpx;
+      left: 20rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 40rpx;
+      padding: 20rpx;
+      font-weight: bold;
+      align-items: center;
+      border: 1rpx solid $brand-primary;
+      border-radius: 8rpx;
+      box-sizing: border-box;
+      background-color: $body-bg;
+      .box-label {
+        display: flex;
+        color: $gray-light;
+        font-size: 28rpx;
+        justify-content: center;
+      }
+      .store-name {
+        font-size: 28rpx;
+        color: $brand-primary;
+      }
+      .box-operator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .operator-label {
+          font-size: 24rpx;
+          color: $gray-lighter;
+        }
+      }
+    }
+    // 车辆列表容器
+    .select-car-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20rpx 0;
+      margin-bottom: 40rpx;
+      // 车辆列表项
+      .car-item {
+        display: flex;
+        justify-content: space-between;
+        color: $gray-dark;
+        font-size: 32rpx;
+        background-color: $body-bg;
+        margin-bottom: 20rpx;
+        padding: 30rpx 20rpx;
+        border-radius: 8rpx;
+        width: 49%;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border: 1rpx solid $gray-lightest;
+        &.active {
+          border: 1rpx solid $brand-primary;
+        }
+      }
+    }
+    .car-list-empty {
+      padding: 20rpx;
+      text-align: center;
+    }
+    .button-vertical {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      padding: 20rpx;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: $body-bg;
+      box-sizing: border-box;
+      box-shadow: 0 -2px 4px 0 rgba(0,0,0,.05);
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20rpx;
+        .btn {
+          margin-bottom: 10rpx;
+          padding: 25rpx;
+        }
+        .group-label {
+          font-size: 24rpx;
+          color: $gray-dark;
+          .required {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 服务
+.page-member-service {
+  .member-service-body {
+    padding: 20rpx;
+  }
+  .form-static {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+    padding: 0 20rpx;
+    background-color: $body-bg;
+    >.form-group {
+      display: flex;
+      flex-direction: row;
+      padding: 30rpx 0;
+      border-bottom: 1rpx solid $gray-lightest;
+      &:last-child {
+        border-bottom: none;
+      }
+      .control-label,
+      .form-control {
+        display: flex;
+        font-size: 28rpx;
+      }
+      .control-label {
+        font-weight: bold;
+      }
+    }
+  }
+  // 服务项目
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20rpx;
+    padding: 20rpx;
+    background-color: $body-bg;
+    .service-head {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10rpx;
+      padding-bottom: 10rpx;
+      font-size: 28rpx;
+      font-weight: bold;
+      color: $gray-dark;
+      border-bottom: 1rpx solid $gray-lightest;
+      .item-checkbox,
+      .project-name,
+      .date-time,
+      .amount {
+        display: flex;
+      }
+      .item-checkbox {
+        width: 10%;
+      }
+      .amount {
+        width: 10%;
+      }
+      .project-name {
+        width: 40%;
+      }
+      .date-time {
+        width: 40%;
+      }
+    }
+    .package-list {
+      display: flex;
+      flex-direction: column;
+      .package-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20rpx;
+        padding: 10rpx 0;
+        font-size: 28rpx;
+        color: $gray-light;
+        border-bottom: 1rpx solid $gray-lightest;
+        .item-checkbox,
+        .project-name,
+        .date-time,
+        .amount {
+          display: flex;
+        }
+        .item-checkbox {
+          width: 10%;
+        }
+        .amount {
+          width: 10%;
+        }
+        .project-name {
+          width: 40%;
+        }
+        .date-time {
+          width: 40%;
+        }
+      }
+    }
+    .service-foot {
+      display: flex;
+      justify-content: flex-end;
+      font-size: 24rpx;
+      font-weight: bold;
+    }
+  }
+  .submit-bar {
+    .btn {
+      padding: 25rpx;
+      border-radius: 0;
+    }
+  }
+}
+
+// 发表评价
+.page-release-evaluation {
+  .evaluation-primary {
+    padding: 20rpx;
+    border-bottom: 1rpx solid $gray-lightest;
+  }
+  .employ-list {
+    padding: 20rpx 0;
+    .radio-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .employ-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30rpx;
+        width: 25%;
+        .employ-avatar {
+          margin-bottom: 10rpx;
+          width: 88rpx;
+          height: 88rpx;
+          border-radius: 44rpx;
+          border: 4rpx solid $gray-lightest;
+          box-sizing: border-box;
+        }
+        .employ-name {
+          box-sizing: border-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: $gray-lighter;
+        }
+        .item-checkbox {
+          display: none;
+        }
+        &.active {
+          .employ-avatar {
+            border: 4rpx solid lighten($brand-primary, 20%);
+          }
+          .employ-name {
+            color: lighten($brand-primary, 20%)
+          }
+        }
+      }
+    }
+  }
+  .star-box {
+    display: flex;
+    flex-direction: row;
+    .star-label {
+      font-size: 28rpx;
+    }
+    .star-wrap {
+      position: relative;
+      top: -10rpx;
+      display: flex;
+      flex-direction: row;
+      .star-image{
+        position: relative;
+        top: 0;
+        margin-left: 20rpx;
+        width: 60rpx;
+        height: 60rpx;
+      }
+      .item{
+        position: absolute;
+        top: 0;
+        width: 60rpx;
+        height: 60rpx;
+        &.item-left {
+          right: 30rpx;
+        }
+        &.item-right {
+          left: 30rpx;
+        }
+      }
+    }
+  }
+  .evaluation-slave {
+    padding: 20rpx;
+  }
+  .submit-bar {
+    .btn {
+      padding: 25rpx;
+      border-radius: 0;
+    }
+  }
+}
+
+/* 评价成功 */
+.page-evaluation-finished {
+  .jumbotron {
+    margin: 50rpx auto;
+    text-align: center;
+    image {
+      width: 400rpx;
+      height: 300rpx;
+    }
+  }
+  .title {
+    .h1 {
+      font-size: 36rpx;
+      margin-bottom: 10rpx;
+    }
+  }
+  .submit-box {
+    text-align: center;
+    .btn {
+      justify-content: center;
+      margin: 50rpx auto;
+      padding: 25prx;
+      width: 30%;
+    }
+  }
+}
+
+/* 支付 */
+.page-eight-thousant-code {
+  .eight-thousant-code {
+    padding: 20rpx;
+    .show-box {
+      margin: 80rpx 0;
+      padding: 40rpx;
+      border-radius: 8rpx;
+      color: $body-bg;
+      font-size: 36rpx;
+      background: lighten($brand-primary, 20%);
+    }
+    .form-special {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30rpx;
+      padding: 30rpx 20rpx;
+      border-radius: 8rpx;
+      border: 1rpx solid $brand-primary;
+      .special-label {
+        margin-right: 20rpx;
+        padding-right: 20rpx;
+        font-size: 32rpx;
+        border-right: 1rpx solid $gray-light;
+        color: $brand-primary;
+      }
+      .special-formcontrol {
+        font-size: 32rpx;
+      }
+    }
+    .submit-box {
+      .btn {
+        padding: 25rpx;
+      }
+    }
+  }
+}

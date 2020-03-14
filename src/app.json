@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/form/checkboxGroup/checkboxGroup",
     "pages/form/checkboxGroup/checkboxFlatList",
-    "pages/demo/index"
+    "pages/demo/index",
+    "pages/demo/star/star"
   ],
   "window": {
     "backgroundTextStyle": "light",

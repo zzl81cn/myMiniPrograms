@@ -3,7 +3,7 @@
   <view>组件示例</view>
   <view class="index-list">
     <navigator class="list-item" url="/pages/demo/index" hover-class="navigator-hover">组件demo(deving)</navigator>
-    <navigator class="list-item" url="/pages/demo/index" hover-class="navigator-hover">插件demo(deving)</navigator>
+    <navigator class="list-item" url="/pages/demo/star/star" hover-class="navigator-hover">插件star(deving)</navigator>
   </view>
   <!-- <view>
     <input type="number" name="linkTel" bindblur="blurTel" value="{{agentTel}}" placeholder="*手机号码" maxlength="11" />

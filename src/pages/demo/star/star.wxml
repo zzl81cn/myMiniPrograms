@@ -1,0 +1,35 @@
+<!--pages/demo/star/star.wxml-->
+<view class="page-release-evaluation">
+  <view class="evaluation-primary">
+    <view class="head-text">title</view>
+    <view class="employ-list">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <block wx:for="{{employList}}" wx:for-item="item" wx:key="index">
+          <label class="employ-item checkbox {{item.id === currentEmployId ? 'active' : ''}}">
+            <radio class="item-checkbox" value="{{item.id}}" color="#e42b42"/>
+            <image class="employ-avatar" src="{{item.avatarImg}}"></image>
+            <view class="employ-name">{{item.name}}</view>
+          </label>
+        </block>
+      </radio-group>
+    </view>
+    <view class="star-box">
+      <view class="star-label">评价：</view>
+      <view class="star-wrap">
+        <block wx:for="{{stars}}" wx:for-item="item" wx:key="index">
+          <image class="star-image" src="{{key > item ? (key-item === 0.5 ? halfSrc : selectedSrc) : normalSrc}}">
+            <view class="item item-left" data-key="{{item + 0.5}}" catchtap="selectLeft"></view>
+            <view class="item item-right" data-key="{{item + 1}}" catchtap="selectRight"></view>
+          </image>
+        </block>
+      </view>
+    </view>
+  </view>
+  <!--<view class="evaluation-slave">
+    <textarea value="{{evaluationText}}" bindconfirm="bindEvaluation" bindblur="bindEvaluation" name="" placeholder="请您写下对洗车小哥的评价" id="" cols="30" rows="10"></textarea>
+  </view>-->
+  <!--<view class="submit-bar bottom-bar">
+    <button class="btn btn-primary btn-lg btn-block" bindtap="submit">提交评价</button>
+  </view>-->
+</view>
+
